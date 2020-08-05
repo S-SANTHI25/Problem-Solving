@@ -1,0 +1,82 @@
+#Program1_Student,Mark
+
+#Program:
+    
+a = int(input())
+name = []
+marks = []
+final=[]
+for _ in range(a):
+    name.append(input())
+    marks.append(float(input()))
+marks1= sorted(list(set(marks)))
+marks1 = marks1[1:]
+for i in range(len(marks)):
+    if marks[i]==marks1[0]:
+        final.append(name[i])
+final.sort()
+for j in final:
+    print(j) 
+
+"""
+Sample:
+
+Input:
+    5
+    Harry
+    37.21
+    Berry
+    37.21
+    Tina
+    37.2
+    Akriti
+    41
+    Harsh
+    39
+Output:
+    Berry
+    Harry
+
+Logic Explanation:
+    To print the name of the students scored second minimum score(marks).
+
+Program Explanation:
+    To get the inputs and to sort the scores and to find second minimum
+    score and then to find the names of the student with that score.
+"""
+
+#Program2-Permutation
+
+#Program:
+    
+from itertools import permutations
+string1,ss_len = input().split()
+A = sorted(list(string1))
+for i in permutations(A,int(ss_len)):
+    print("".join(i))
+
+"""
+Sample:
+Input:
+    HACK 2
+Output:
+    AC
+    AH
+    AK
+    CA
+    CH
+    CK
+    HA
+    HC
+    HK
+    KA
+    KC
+    KH
+
+Logic Explanation:
+    To find all the possible permutations of a given words with a given
+    length.
+Program Explanation:
+    By importing permutations from itertools it is easy to find all possible
+    permutations.
+"""
