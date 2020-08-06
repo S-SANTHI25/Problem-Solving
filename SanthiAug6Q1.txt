@@ -1,0 +1,21 @@
+2. Program :
+
+tym = int(input())
+value = 3
+while tym > value:
+    tym = tym-value
+    value *= 2
+
+print(value-tym+1)
+
+Sample :
+Input : 4
+Output : 6
+
+Logic Explanation :
+
+To print the value displayed by the strange counter at the given time t.
+
+Program Explanation :
+
+By using the while loop , to check the value at the given time.
